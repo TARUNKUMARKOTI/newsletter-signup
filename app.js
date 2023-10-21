@@ -35,7 +35,7 @@ app.post("/",function(req,res){
         url: "https://us21.api.mailchimp.com/3.0/lists/8e43239f9d",
         method: "POST",
         headers: {
-            "Authorization":"tarun1 2f238d58788fcb7390492071427ad575-us21"
+            "Authorization":"tarun1 9479e3bd4b74ef5819fefc6e706fa473-us21"
         },
         body:jsonData
         
@@ -67,7 +67,7 @@ app.listen(process.env.PORT || 3000,function(){
 
 
 //api key
-// 2f238d58788fcb7390492071427ad575-us21
+// 9479e3bd4b74ef5819fefc6e706fa473-us21
 
 //list id
 //8e43239f9d
