@@ -1,7 +1,6 @@
 const express=require("express");
 const bodyParser=require("body-parser");
 const request=require("request");
-const e = require("express");
 
 const app=express();
 
@@ -36,7 +35,7 @@ app.post("/",function(req,res){
         url: "https://us21.api.mailchimp.com/3.0/lists/8e43239f9d",
         method: "POST",
         headers: {
-            "Authorization":"tarun1 85d9e92956f9ed5d725651542a11ba23-us21"
+            "Authorization":"tarun1 2f238d58788fcb7390492071427ad575-us21"
         },
         body:jsonData
         
@@ -51,7 +50,7 @@ app.post("/",function(req,res){
             } else{
                 res.sendFile(__dirname+"/failure.html");
             }
-            //console.log(response.statusCode);
+            console.log(response.statusCode);
         }
     });
 
@@ -62,13 +61,13 @@ app.post("/failure", function(req,res){
     res.redirect("/");
 });
 
-app.listen(process.env.PORT|| 3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("Server is running on port 3000");
 });
 
 
 //api key
-// 85d9e92956f9ed5d725651542a11ba23-us21
+// 2f238d58788fcb7390492071427ad575-us21
 
 //list id
 //8e43239f9d
